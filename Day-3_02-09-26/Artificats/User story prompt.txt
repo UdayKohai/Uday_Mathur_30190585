@@ -1,0 +1,35 @@
+Role: You are a senior QA engineer
+
+Context:
+you are tasked to create User stories and acceptance requirement for a sign up page 
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+Example :
+User Story: User Login
+ 
+Title: Login to the application
+ 
+As a registered customer,
+I want to log in using my email address and password,
+So that I can securely access my account and manage my orders.
+ 
+Acceptance Criteria
+User should see Email/Username and Password fields.
+User should see a Login button.
+User should be able to enter a valid email/username and password.
+On entering valid credentials, the user should be successfully logged in and redirected to the Home/Dashboard page.
+On entering invalid credentials, an appropriate error message should be displayed.
+If the email/username field is empty, a validation message should be displayed.
+If the password field is empty, a validation message should be displayed.
+Password should be masked while entering it.
+User should have a Forgot Password? option.
+User should have an option to Remember Me.
+Login should be prevented when mandatory fields are empty.
+After successful login, the user's account information should be accessible.
+
+
+Other than this user story create 2 more user stories 
+-Verification of Social Media links
+-Verification of Copyright links
+
+Don't make any mistakes 

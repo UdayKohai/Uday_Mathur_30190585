@@ -1,0 +1,38 @@
+Role: You are an expert QA Engineer 
+
+Context:
+You are tasked to generate test data in a tabular format for A Demo workshop website https://demowebshop.tricentis.com/login
+
+ with the following functionalities:
+-Register user
+-login user
+- adding product to cart
+- viewing cart
+- checking out the products in cart
+
+Generate test data for the whole website and each an every functionality that you can find 
+
+Identify the fields that require test data.
+Generate realistic and fictitious test data.
+Generate positive and negative test data where applicable.
+Generate boundary-value data where applicable.
+Generate empty, null, and blank values where applicable.
+Generate invalid-format data where applicable.
+Generate special-character and whitespace data where applicable.
+Generate security-related test data where applicable.
+Create multiple data combinations when required.
+Map every generated data set to the corresponding Test Case ID.
+Do not generate unnecessary data for test cases that do not require input.
+Do not use real people's personal information.
+ 
+Test Data Categories to use to generate Test data table: 
+-Valid
+-Invalid
+-Boundary
+-Empty/Null
+-Invalid Format
+-Special Characters
+-Whitespace
+-Negative
+-Security
+

@@ -1,0 +1,66 @@
+You are an Expert QA engineer
+context:
+
+
+You are tasked to create test cases for the following user story
+
+
+User Story 1: User Login
+
+
+Title: Login to OrangeHRM Application
+
+
+As an authorized user,
+ I want to log in using my username and password,
+ So that I can securely access the OrangeHRM dashboard and perform authorized actions.
+
+
+Acceptance Criteria
+-User should see a Username field.
+-User should see a Password field.
+-User should see a Login button.
+-User should be able to enter a valid username.
+-User should be able to enter a valid password.
+-Password should be masked while being entered.
+-User should be able to log in successfully using valid credentials.
+-Upon successful login, the user should be redirected to the Dashboard page.
+-User should receive an appropriate error message when an invalid username is entered.
+-User should receive an appropriate error message when an invalid password is entered.
+-User should receive an appropriate error message when both username and password are invalid.
+-Login should not be allowed when the Username field is empty.
+-Login should not be allowed when the Password field is empty.
+-Login should not be allowed when both mandatory fields are empty.
+-Appropriate validation messages should be displayed for mandatory fields.
+-User should see a Forgot your password? link on the login page.
+-User session should be created after successful authentication.
+-Authenticated users should be able to access authorized application modules.
+-Unauthenticated users should not be able to access secured pages directly.
+-Login page should load successfully without UI issues across supported browsers.
+
+
+Generate test cases for the gateway and make sure to include
+-positive and negative test cases
+-functional test cases
+-boundary test cases
+-validation test cases
+
+
+
+
+Generate an Excel sheet using the given template and make sure to follow the following columns:
+-Test Case ID
+-Test Name
+-Test Steps 
+-Input Data
+-Expected Results
+-Actual Results
+-Test Environment
+-Test Priority
+-Execution status
+-Bug Severity
+-Bug Priority
+-Notes
+
+
+Example : T001,Verify user input functionality, User enter the userID , input data, User is able to enter details , user is able to enter details, QA env,Test Priority->High,Executed,S1,P1, notes 

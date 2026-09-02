@@ -1,0 +1,406 @@
+Role : Yoou are an expert senior QA engineer
+
+Context:
+You are tasked to generate test plan in a tabular format for A Demo workshop website https://demowebshop.tricentis.com/login
+with the following functionalities:
+-Registration
+-Login
+-Product Search
+-Product Details
+-Add To Cart
+-Shopping Cart
+-Billing Address
+-Shipping Address
+-Payment Method
+-Credit Card Payment
+-Order Confirmation
+
+While creating the test plan make sure to follow the following rules:
+
+Define the Release Scope: Identify the features, modules, and functionalities to be tested. Clearly specify what is included and excluded from the current release.
+Define Test Objectives: Set the goals of testing, such as validating functionality, detecting defects, and ensuring the application meets business requirements.
+Design Test Strategy: Define the overall testing approach, including testing types, techniques, tools, and execution methods to be used.
+Plan Test Environment and Test Data: Prepare the required hardware, software, network, and test data to ensure testing can be executed successfully.
+Estimate Resources: Identify the required team members, roles, tools, and effort needed to complete the testing activities.
+Determine Test Deliverables: List the documents and outputs to be produced during testing, such as test cases, defect reports, and test summary reports.
+Schedule Timelines: Create a testing schedule with milestones and deadlines for planning, execution, defect fixing, and reporting.
+Review and Approve Test Plan: Review the completed Test Plan with stakeholders and obtain formal approval before testing begins.
+Risks and Mitigation Plan
+
+
+follow the following structure for each table for the test plan:
+# TEST PLAN DOCUMENT
+ 
+## 1. Document Information
+ 
+| Field            | Details                              |
+| ---------------- | ------------------------------------ |
+| Project Name     | [Project Name]                       |
+| Application Name | [Application Name]                   |
+| Document Name    | Test Plan                            |
+| Document ID      | [TP-001]                             |
+| Version          | [1.0]                                |
+| Date             | [DD-MM-YYYY]                         |
+| Prepared By      | [Name]                               |
+| Reviewed By      | [Name]                               |
+| Approved By      | [Name]                               |
+| Document Status  | Draft / In Review / Approved / Final |
+ 
+---
+ 
+# 2. Document Revision History
+ 
+| Version | Date   | Author | Description of Change | Reviewer | Approval |
+| ------- | ------ | ------ | --------------------- | -------- | -------- |
+| 1.0     | [Date] | [Name] | Initial version       | [Name]   | [Name]   |
+| 1.1     | [Date] | [Name] | [Changes]             | [Name]   | [Name]   |
+ 
+---
+ 
+# 3. Project Overview
+ 
+### 3.1 Project Description
+ 
+[Provide a brief description of the application/project.]
+ 
+### 3.2 Business Objective
+ 
+[Describe the business objective and expected business value.]
+ 
+### 3.3 Application Overview
+ 
+[Describe the major modules/features of the application.]
+ 
+### 3.4 Testing Objective
+ 
+The objective of testing is to verify that the application:
+ 
+* Meets the defined business and functional requirements.
+* Works as expected under normal and exceptional conditions.
+* Provides a reliable and user-friendly experience.
+* Meets applicable performance, security, compatibility, and accessibility requirements.
+* Does not introduce critical regressions.
+ 
+---
+ 
+# 4. Scope of Testing
+ 
+## 4.1 In Scope
+ 
+List all functionality that will be tested.
+ 
+| Module       | Features                            |
+| ------------ | ----------------------------------- |
+| Login        | Login, Logout, Forgot Password      |
+| Registration | User Registration, Validation       |
+| Product      | Search, Filter, Product Details     |
+| Cart         | Add, Remove, Update Quantity        |
+| Checkout     | Address, Payment, Order Placement   |
+| Profile      | Account Information, Profile Update |
+ 
+## 4.2 Out of Scope
+ 
+Clearly identify functionality that will not be tested.
+ 
+| Feature   | Reason   |
+| --------- | -------- |
+| [Feature] | [Reason] |
+| [Feature] | [Reason] |
+ 
+---
+ 
+# 5. Test Items
+ 
+List the application components that are being tested.
+ 
+| Test Item       | Description                   | Version   |
+| --------------- | ----------------------------- | --------- |
+| Web Application | Customer-facing website       | [Version] |
+| API             | Backend REST APIs             | [Version] |
+| Database        | Application database          | [Version] |
+| Mobile Web      | Responsive mobile application | [Version] |
+ 
+---
+ 
+# 6. Testing Types
+ 
+The following testing types will be considered based on project requirements:
+ 
+### Functional Testing
+ 
+* Smoke Testing
+* Sanity Testing
+* System Testing
+* Integration Testing
+* Regression Testing
+* End-to-End Testing
+* User Acceptance Testing
+ 
+### Non-Functional Testing
+ 
+* Performance Testing
+* Load Testing
+* Stress Testing
+* Security Testing
+* Compatibility Testing
+* Usability Testing
+* Accessibility Testing
+* Reliability Testing
+ 
+### Other Testing
+ 
+* UI Testing
+* API Testing
+* Database Testing
+* Cross-browser Testing
+* Responsive Testing
+* Negative Testing
+* Exploratory Testing
+ 
+---
+ 
+# 7. Test Approach / Test Strategy
+ 
+Describe how testing will be performed.
+ 
+### 7.1 Test Approach
+ 
+[Describe the overall testing methodology.]
+ 
+Example:
+ 
+Testing will follow a risk-based approach. High-priority and business-critical functionality will be tested first. Functional, negative, regression, compatibility, and accessibility testing will be performed based on requirements.
+ 
+### 7.2 Manual Testing
+ 
+Manual testing will be performed for:
+ 
+* Exploratory testing
+* Usability testing
+* Ad-hoc scenarios
+* New functionality
+* Requirements validation
+ 
+### 7.3 Automation Testing
+ 
+Automation will be used for:
+ 
+* Regression testing
+* Smoke testing
+* Repetitive test scenarios
+* Cross-browser testing
+* End-to-end testing
+ 
+### 7.4 API Testing
+ 
+[Specify API testing approach and tools.]
+ 
+### 7.5 Database Testing
+ 
+[Specify database validation approach.]
+ 
+---
+ 
+# 8. Test Environment
+ 
+| Environment      | Details                          |
+| ---------------- | -------------------------------- |
+| Environment      | QA / UAT / Staging               |
+| Application URL  | [URL]                            |
+| OS               | Windows / macOS / Linux          |
+| Browser          | Chrome / Edge / Firefox / Safari |
+| Browser Versions | [Versions]                       |
+| Mobile Devices   | [Devices]                        |
+| Database         | [Database]                       |
+| API Environment  | [API URL/Environment]            |
+| Network          | [Network configuration]          |
+ 
+---
+ 
+# 9. Test Data Requirements
+ 
+Define the test data required for testing.
+ 
+| Data Type        | Description              | Example                                       |
+| ---------------- | ------------------------ | --------------------------------------------- |
+| Valid User       | Registered user          | [testuser@test.com](mailto:testuser@test.com) |
+| Invalid User     | Unregistered user        | [invalid@test.com](mailto:invalid@test.com)   |
+| Valid Password   | Valid password           | Test@123                                      |
+| Invalid Password | Incorrect password       | Wrong@123                                     |
+| Product Data     | Available products       | Product001                                    |
+| Payment Data     | Test payment information | Test data only                                |
+| Boundary Data    | Min/Max values           | Based on requirements                         |
+ 
+**Note:** Use fictitious or approved test data. Do not use real sensitive customer information.
+ 
+---
+ 
+# 10. Test Case Management
+ 
+| Field                       | Details                                  |
+| --------------------------- | ---------------------------------------- |
+| Test Case Tool              | [Jira / TestRail / Excel / Azure DevOps] |
+| Test Case Format            | [Template/Standard]                      |
+| Test Case Review            | [Required/Not Required]                  |
+| Traceability                | [Required/Not Required]                  |
+| Test Case Naming Convention | [Convention]                             |
+ 
+### Test Case Status
+ 
+* Not Run
+* Pass
+* Fail
+* Blocked
+* Not Applicable
+* Deferred
+ 
+---
+ 
+# 11. Requirements Traceability
+ 
+Every requirement should be mapped to one or more test cases.
+ 
+| Requirement ID | Requirement    | Test Case ID | Test Result |
+| -------------- | -------------- | ------------ | ----------- |
+| REQ-001        | User Login     | TC_LOGIN_001 | Pass        |
+| REQ-002        | Password Reset | TC_LOGIN_002 | Pass        |
+| REQ-003        | Product Search | TC_PROD_001  | Fail        |
+ 
+---
+ 
+# 12. Entry Criteria
+ 
+Testing can begin when:
+ 
+* Requirements are approved.
+* Test environment is available.
+* Application build is deployed.
+* Test data is available.
+* Test cases are reviewed and approved.
+* Required tools/access are available.
+* Critical dependencies are resolved.
+ 
+---
+ 
+# 13. Exit Criteria
+ 
+Testing can be completed when:
+ 
+* All planned test cases have been executed.
+* Critical and High-priority defects are resolved or formally accepted.
+* Required regression testing is completed.
+* No unresolved blocker defects remain.
+* Test coverage meets the agreed target.
+* Test execution results are documented.
+* Test summary report is prepared.
+* Stakeholders provide approval/sign-off.
+ 
+---
+ 
+# 14. Suspension Criteria
+ 
+Testing may be suspended when:
+ 
+* Application is unavailable.
+* Critical functionality is completely blocked.
+* Test environment is unstable.
+* Required test data is unavailable.
+* A critical build issue prevents meaningful testing.
+ 
+---
+ 
+# 15. Resumption Criteria
+ 
+Testing will resume when:
+ 
+* Blocking defects are resolved.
+* Stable application build is deployed.
+* Test environment becomes available.
+* Required test data is available.
+* Dependencies are resolved.
+ 
+---
+ 
+# 16. Defect Management
+ 
+### Defect Lifecycle
+ 
+New → Assigned → Open → Fixed → Retest → Verified → Closed
+ 
+Possible additional statuses:
+ 
+* Reopened
+* Rejected
+* Duplicate
+* Deferred
+* Cannot Reproduce
+* Won't Fix
+ 
+### Defect Severity
+ 
+| Severity | Description                                                |
+| -------- | ---------------------------------------------------------- |
+| Critical | Application/business-critical functionality is unavailable |
+| High     | Major functionality is impacted                            |
+| Medium   | Functionality is partially impacted                        |
+| Low      | Minor issue with limited impact                            |
+ 
+### Defect Priority
+ 
+| Priority | Description            |
+| -------- | ---------------------- |
+| P1       | Immediate fix required |
+| P2       | High priority          |
+| P3       | Normal priority        |
+| P4       | Low priority           |
+ 
+---
+ 
+# 17. Defect Report Template
+ 
+| Field              | Details                  |
+| ------------------ | ------------------------ |
+| Defect ID          | BUG-001                  |
+| Summary            | [Defect title]           |
+| Module             | [Module]                 |
+| Environment        | [Environment]            |
+| Severity           | Critical/High/Medium/Low |
+| Priority           | P1/P2/P3/P4              |
+| Preconditions      | [Preconditions]          |
+| Steps to Reproduce | [Steps]                  |
+| Test Data          | [Data]                   |
+| Expected Result    | [Expected]               |
+| Actual Result      | [Actual]                 |
+| Attachments        | Screenshot/Video/Logs    |
+| Browser/OS         | [Details]                |
+| Reported By        | [Name]                   |
+| Assigned To        | [Name]                   |
+| Status             | [Status]                 |
+ 
+---
+ 
+# 18. Roles and Responsibilities
+ 
+| Role                | Responsibility                       |
+| ------------------- | ------------------------------------ |
+| Test Manager        | Test planning, monitoring, reporting |
+| QA Lead             | Test strategy, review, coordination  |
+| QA Engineer         | Test execution and defect reporting  |
+| Automation Engineer | Automation framework and scripts     |
+| Developer           | Defect analysis and fixing           |
+| Business Analyst    | Requirement clarification            |
+| Product Owner       | Business validation and acceptance   |
+| DevOps              | Environment and deployment support   |
+ 
+---
+ 
+# 19. Tools
+ 
+| Purpose         | Tool                                  |
+| --------------- | ------------------------------------- |
+| Test Management | [Jira/TestRail/Azure DevOps]          |
+| Automation      | [Selenium/Playwright/Cypress]         |
+| API Testing     | [Postman/REST Assured]    		  |
+
+
+Make sure to not create any mistake

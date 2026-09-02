@@ -1,0 +1,33 @@
+You are a QA team manager 
+
+You are tasked to create a test strategy report in a word document
+
+while making the document make sure:
+Your effective test strategy should cover these key components.
+
+Component	Description
+Test Objectives	Define what you aim to achieve with testing. Link these goals to business objectives and integrate them into the overall software development process.
+Overall Testing Approach	Outline the general method for testing throughout the software development lifecycle.
+Testing Types	Enumerate all the intended types of testing, such as functional, regression, usability/UX, performance, security and others that follow the project objectives
+Tools & Testing Environment	Determine software and hardware testing systems such as test tools, test management, automation frameworks and other devices and configuration in the testing environment.
+Roles & Responsibilities	Appoint roles to other members of the testing team QA engineers, developers and project managers. What do you mean by that resource allocation and ownership?
+Risk Management	Explain how to identify, evaluate and reduce risks that can impact on software quality. Normally, institutional investors have a special contingency planning segment in their strategy or in negotiation, which have varying priorities depending on the gradually changing market conditions.
+Entry & Exit Criteria	Establish criteria that will determine the initiation and the conclusion of testing activities. The testing progress and the benchmark on quality should be reported properly.
+
+The website that you are creating the stratergy for is given below with the feature
+https://demowebshop.tricentis.com/login
+with the following functionalities:
+-Registration
+-Login
+-Product Search
+-Product Details
+-Add To Cart
+-Shopping Cart
+-Billing Address
+-Shipping Address
+-Payment Method
+-Credit Card Payment
+-Order Confirmation
+
+
+Make sure to not include any person information and MAKE SURE TO MAKE NO MISTAKE

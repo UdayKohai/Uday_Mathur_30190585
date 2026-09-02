@@ -1,0 +1,77 @@
+User Story 1: User Login
+
+Title: Login to OrangeHRM Application
+
+As an authorized user,
+ I want to log in using my username and password,
+ So that I can securely access the OrangeHRM dashboard and perform authorized actions.
+
+Acceptance Criteria
+User should see a Username field.
+User should see a Password field.
+User should see a Login button.
+User should be able to enter a valid username.
+User should be able to enter a valid password.
+Password should be masked while being entered.
+User should be able to log in successfully using valid credentials.
+Upon successful login, the user should be redirected to the Dashboard page.
+User should receive an appropriate error message when an invalid username is entered.
+User should receive an appropriate error message when an invalid password is entered.
+User should receive an appropriate error message when both username and password are invalid.
+Login should not be allowed when the Username field is empty.
+Login should not be allowed when the Password field is empty.
+Login should not be allowed when both mandatory fields are empty.
+Appropriate validation messages should be displayed for mandatory fields.
+User should see a Forgot your password? link on the login page.
+User session should be created after successful authentication.
+Authenticated users should be able to access authorized application modules.
+Unauthenticated users should not be able to access secured pages directly.
+Login page should load successfully without UI issues across supported browsers.
+
+
+
+User Story 2: Verification of Social Media Links
+
+Title: Access OrangeHRM Social Media Pages
+
+As a visitor,
+ I want to access OrangeHRM social media pages from the login page,
+ So that I can learn more about the company and stay updated with its activities.
+
+Acceptance Criteria
+User should be able to view all available social media icons displayed on the login page.
+Each social media icon should be clearly visible and clickable.
+Clicking the LinkedIn icon should open the official LinkedIn page in a new browser tab.
+Clicking the Facebook icon should open the official Facebook page in a new browser tab.
+Clicking the Twitter/X icon should open the official social media page in a new browser tab.
+Clicking the YouTube icon should open the official YouTube channel in a new browser tab.
+All social media links should navigate to the correct destination URLs.
+No broken links should be present.
+Social media icons should be displayed correctly without distortion.
+Social media links should remain functional across supported browsers.
+User should remain on the login page while the social media page opens in a new tab.
+Appropriate error handling should exist if a destination page is temporarily unavailable.
+
+
+
+User Story 3: Verification of Copyright Link
+
+Title: Access Copyright Information
+
+As a visitor,
+ I want to view copyright and company information from the login page,
+ So that I can verify product ownership and legal information.
+
+Acceptance Criteria
+User should be able to view the copyright information displayed on the login page.
+Copyright text should be clearly visible and readable.
+User should be able to click the copyright/company link if it is configured as a hyperlink.
+Clicking the copyright link should navigate to the correct OrangeHRM website or information page.
+The copyright link should open successfully without errors.
+The destination page should load successfully with HTTP status 200.
+No broken links should be present.
+Copyright year and company name should be displayed correctly.
+Copyright information should match OrangeHRM branding guidelines.
+The copyright link should function correctly across supported browsers.
+The user should be able to return to the login page without issues.
+The copyright information should remain visible and properly aligned on different screen resolutions.

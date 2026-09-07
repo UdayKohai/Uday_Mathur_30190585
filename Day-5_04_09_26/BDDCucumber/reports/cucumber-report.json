@@ -1,0 +1,161 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "student-registration-feature;verify-a-student-can-register-successfully",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Verify a student can register successfully",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 612318800
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1594970299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User opens the student application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 176791499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters \"Uday\" and \"test@gmail.com\" and \"1234567890\" and \"2000-01-01\" and \"Math\" and \"123 Amul Point\" and \"Rajasthan\" and \"Agra\" and \"Male\" and \"Reading\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:84"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 7933899
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Login button is enabled",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:89"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 73493800
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2214599
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-registration-feature;verify-a-student-can-register-successfully",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Verify a student can register successfully",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 606069300
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1651449200
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User opens the student application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 189014299
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters \"Test1\" and \"test1@gmail.com\" and \"1234566890\" and \"2000-05-01\" and \"English\" and \"126 Amul Point\" and \"Rajasthan\" and \"Meerut\" and \"Female\" and \"Sports\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:84"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3957099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Login button is enabled",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:89"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 69991200
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 920699
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "student-registration-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Student Registration Feature",
+    "tags": [],
+    "uri": "features\\studentReg.feature"
+  }
+]

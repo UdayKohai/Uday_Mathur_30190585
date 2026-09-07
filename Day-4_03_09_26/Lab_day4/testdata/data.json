@@ -1,0 +1,10 @@
+{
+    "url":"https://www.playwrightpad.in/sandbox/banking",
+    "username":"apex_user",
+    "password":"Password123!",
+    "benefName":"Uday",
+    "benefNumb":"123456",
+    "benefBank":"Chase Bank",
+    "transferAmt":"500",
+    "benefInd":"2"
+}

@@ -1,0 +1,47 @@
+- generic [ref=e196]:
+  - generic [ref=e197]:
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - button "Open Menu" [ref=e201] [cursor=pointer]
+          - img "Open Menu" [ref=e202]
+        - generic [ref=e203]: Swag Labs
+        - generic [ref=e205]: "1"
+      - generic [ref=e208]: "Checkout: Overview"
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - generic [ref=e213]: QTY
+        - generic [ref=e214]: Description
+        - generic [ref=e215]:
+          - generic [ref=e216]: "1"
+          - generic [ref=e217]:
+            - link "Sauce Labs Backpack" [ref=e218] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e220]: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+            - generic [ref=e221]: $29.99
+      - generic [ref=e223]:
+        - generic [ref=e224]: "Payment Information:"
+        - generic [ref=e225]: "SauceCard #31337"
+        - generic [ref=e226]: "Shipping Information:"
+        - generic [ref=e227]: Free Pony Express Delivery!
+        - generic [ref=e228]: Price Total
+        - generic [ref=e229]: "Item total: $29.99"
+        - generic [ref=e230]: "Tax: $2.40"
+        - generic [ref=e231]: "Total: $32.39"
+        - generic [ref=e232]:
+          - button [ref=e233] [cursor=pointer]:
+            - img "Go back" [ref=e234]
+            - text: Cancel
+          - button "Finish" [ref=e235] [cursor=pointer]
+  - contentinfo [ref=e236]:
+    - list [ref=e237]:
+      - listitem [ref=e238]:
+        - link "Twitter" [ref=e239] [cursor=pointer]:
+          - /url: https://twitter.com/saucelabs
+      - listitem [ref=e240]:
+        - link "Facebook" [ref=e241] [cursor=pointer]:
+          - /url: https://www.facebook.com/saucelabs
+      - listitem [ref=e242]:
+        - link "LinkedIn" [ref=e243] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/sauce-labs/
+    - generic [ref=e244]: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy

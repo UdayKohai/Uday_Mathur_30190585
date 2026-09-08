@@ -1,0 +1,2 @@
+[    1183ms] [LOG] https://videogamedb.uk @ https://videogamedb.uk/swagger-ui/springfox.js?v=3.0.4:15
+[    4019ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://videogamedb.uk/api/v2/videogame/1:0

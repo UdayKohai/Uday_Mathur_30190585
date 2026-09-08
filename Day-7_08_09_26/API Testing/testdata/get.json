@@ -1,0 +1,29 @@
+[
+  {
+    "name": "GET list returns all video games",
+    "path": "/api/v2/videogame",
+    "headers": {
+      "Accept": "application/xml"
+    },
+    "expectedStatus": 200,
+    "expectedBody": "<List><item category=\"Shooter\"><id>1</id><name>Resident Evil 4</name><releaseDate>2005-10-01 23:59:59</releaseDate><reviewScore>85</reviewScore><rating>Universal</rating></item><item category=\"Driving\"><id>2</id><name>Gran Turismo 3</name><releaseDate>2001-03-10 23:59:59</releaseDate><reviewScore>91</reviewScore><rating>Universal</rating></item><item category=\"Puzzle\"><id>3</id><name>Tetris</name><releaseDate>1984-06-25 23:59:59</releaseDate><reviewScore>88</reviewScore><rating>Universal</rating></item><item category=\"Platform\"><id>4</id><name>Super Mario 64</name><releaseDate>1996-10-20 23:59:59</releaseDate><reviewScore>90</reviewScore><rating>Universal</rating></item><item category=\"Adventure\"><id>5</id><name>The Legend of Zelda: Ocarina of Time</name><releaseDate>1998-12-10 23:59:59</releaseDate><reviewScore>93</reviewScore><rating>PG-13</rating></item><item category=\"Shooter\"><id>6</id><name>Doom</name><releaseDate>1993-02-18 23:59:59</releaseDate><reviewScore>81</reviewScore><rating>Mature</rating></item><item category=\"Puzzle\"><id>7</id><name>Minecraft</name><releaseDate>2011-12-05 23:59:59</releaseDate><reviewScore>77</reviewScore><rating>Universal</rating></item><item category=\"Strategy\"><id>8</id><name>SimCity 2000</name><releaseDate>1994-09-11 23:59:59</releaseDate><reviewScore>88</reviewScore><rating>Universal</rating></item><item category=\"RPG\"><id>9</id><name>Final Fantasy VII</name><releaseDate>1997-08-20 23:59:59</releaseDate><reviewScore>97</reviewScore><rating>PG-13</rating></item><item category=\"Driving\"><id>10</id><name>Grand Theft Auto III</name><releaseDate>2001-04-23 23:59:59</releaseDate><reviewScore>90</reviewScore><rating>Mature</rating></item></List>"
+  },
+  {
+    "name": "GET existing video game by ID",
+    "path": "/api/v2/videogame/1",
+    "headers": {
+      "Accept": "application/xml"
+    },
+    "expectedStatus": 200,
+    "expectedBody": "<VideoGame category=\"Shooter\"><id>1</id><name>Resident Evil 4</name><releaseDate>2005-10-01 23:59:59</releaseDate><reviewScore>85</reviewScore><rating>Universal</rating></VideoGame>"
+  },
+  {
+    "name": "GET nonexistent video game returns not found",
+    "path": "/api/v2/videogame/9999",
+    "headers": {
+      "Accept": "application/xml"
+    },
+    "expectedStatus": 404,
+    "expectedBodyPattern": "^<Map><timestamp>[^<]+</timestamp><status>404</status><error>Not Found</error><path>/api/v2/videogame/9999</path></Map>$"
+  }
+]

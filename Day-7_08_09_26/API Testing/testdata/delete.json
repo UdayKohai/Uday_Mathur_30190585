@@ -1,0 +1,11 @@
+[
+  {
+    "name": "DELETE existing video game is rejected without authorization",
+    "path": "/api/v2/videogame/1",
+    "headers": {
+      "Accept": "text/plain"
+    },
+    "expectedStatus": 200,
+    "expectedBody": "Video game deleted"
+  }
+]

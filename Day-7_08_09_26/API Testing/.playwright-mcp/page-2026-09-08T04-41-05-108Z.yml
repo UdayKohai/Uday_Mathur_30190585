@@ -1,0 +1,1232 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - img "Swagger UI" [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Select a definition
+      - combobox "Select a definition" [ref=e12]:
+        - option "default" [selected]
+  - generic [ref=e14]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Video Game DB 2022 API 1.0.0 OAS3" [level=2] [ref=e20]:
+          - text: Video Game DB 2022 API
+          - generic [ref=e21]:
+            - generic [ref=e22]: 1.0.0
+            - generic [ref=e24]: OAS3
+        - link "https://videogamedb.uk/v3/api-docs" [ref=e26] [cursor=pointer]:
+          - /url: https://videogamedb.uk/v3/api-docs
+      - paragraph [ref=e30]: This is an API for a simple, fictional Video Game Database. The application is running in READ ONLY mode, which means any changes like creating, updating or deleting games does not get persisted.
+      - link "James Willett - Website" [ref=e33] [cursor=pointer]:
+        - /url: https://james-willett.com
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - text: Servers
+        - combobox [ref=e39]:
+          - option "https://videogamedb.uk:443 - Inferred Url" [selected]
+      - button "Authorize" [ref=e41] [cursor=pointer]
+    - generic [ref=e47]:
+      - heading [level=3] [ref=e50] [cursor=pointer]:
+        - link "api-authentication-controller" [ref=e51]:
+          - /url: "#/api-authentication-controller"
+        - paragraph [ref=e54]: Api Authentication Controller
+        - button "Expand operation" [ref=e55]
+      - heading [level=3] [ref=e60] [cursor=pointer]:
+        - link "api-video-games-controller" [ref=e61]:
+          - /url: "#/api-video-games-controller"
+        - paragraph [ref=e64]: Api Video Games Controller
+        - button "Expand operation" [ref=e65]
+      - generic [ref=e69]:
+        - heading [level=3] [ref=e70] [cursor=pointer]:
+          - link "api-video-games-controller-v-2" [ref=e71]:
+            - /url: "#/api-video-games-controller-v-2"
+          - paragraph [ref=e74]: Api Video Games Controller V 2
+          - button "Collapse operation" [expanded] [ref=e75]
+        - generic [ref=e79]:
+          - generic [ref=e81]:
+            - button "get /api/v2/videogame" [expanded] [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: GET
+              - link "/api/v2/videogame" [ref=e86]:
+                - /url: "#/api-video-games-controller-v-2/listVideoGamesUsingGET"
+              - generic [ref=e88]: List all video games
+            - generic [ref=e472]:
+              - generic [ref=e473]:
+                - generic [ref=e474]:
+                  - heading "Parameters" [level=4] [ref=e477] [cursor=pointer]
+                  - button "Cancel" [ref=e520] [cursor=pointer]
+                - paragraph [ref=e482]: No parameters
+              - generic [ref=e483]:
+                - button "Execute" [ref=e521] [cursor=pointer]
+                - button "Clear" [ref=e522] [cursor=pointer]
+              - generic [ref=e484]:
+                - generic [ref=e524]:
+                  - heading "Request" [level=3] [ref=e526]
+                  - generic [ref=e527]:
+                    - generic [ref=e528]:
+                      - heading "Curl" [level=4] [ref=e529]
+                      - button [ref=e531] [cursor=pointer]
+                      - code [ref=e534]:
+                        - generic [ref=e535]: curl -X
+                        - generic [ref=e536]: "'GET'"
+                        - generic [ref=e537]: \
+                        - generic [ref=e539]: "'https://videogamedb.uk:443/api/v2/videogame'"
+                        - generic [ref=e540]: \
+                        - generic [ref=e541]: "-H"
+                        - generic [ref=e542]: "'accept: application/xml'"
+                    - generic [ref=e543]:
+                      - heading "Request URL" [level=4] [ref=e544]
+                      - generic [ref=e545]: https://videogamedb.uk:443/api/v2/videogame
+                  - heading "Server response" [level=3] [ref=e548]
+                  - table [ref=e550]:
+                    - rowgroup [ref=e551]:
+                      - row [ref=e552]:
+                        - cell "Code" [ref=e553]
+                        - cell "Details" [ref=e554]
+                    - rowgroup [ref=e555]:
+                      - row [ref=e556]:
+                        - cell "200" [ref=e557]
+                        - cell [ref=e558]:
+                          - generic [ref=e559]:
+                            - heading "Response body" [level=5] [ref=e560]
+                            - generic [ref=e561]:
+                              - generic [ref=e562] [cursor=pointer]: Download
+                              - button [ref=e564] [cursor=pointer]
+                              - code [ref=e566]:
+                                - generic [ref=e567]: <
+                                - generic [ref=e568]: List
+                                - generic [ref=e569]: ">"
+                                - generic [ref=e571]: <
+                                - generic [ref=e572]: item
+                                - generic [ref=e574]: category
+                                - generic [ref=e575]: =
+                                - generic [ref=e576]: "\"Shooter\""
+                                - generic [ref=e577]: ">"
+                                - generic [ref=e579]: <
+                                - generic [ref=e580]: id
+                                - generic [ref=e581]: ">"
+                                - generic [ref=e582]: "1"
+                                - generic [ref=e583]: </
+                                - generic [ref=e584]: id
+                                - generic [ref=e585]: ">"
+                                - generic [ref=e587]: <
+                                - generic [ref=e588]: name
+                                - generic [ref=e589]: ">"
+                                - generic [ref=e590]: Resident Evil 4
+                                - generic [ref=e591]: </
+                                - generic [ref=e592]: name
+                                - generic [ref=e593]: ">"
+                                - generic [ref=e595]: <
+                                - generic [ref=e596]: releaseDate
+                                - generic [ref=e597]: ">"
+                                - generic [ref=e598]: 2005-10-01 23:59:59
+                                - generic [ref=e599]: </
+                                - generic [ref=e600]: releaseDate
+                                - generic [ref=e601]: ">"
+                                - generic [ref=e603]: <
+                                - generic [ref=e604]: reviewScore
+                                - generic [ref=e605]: ">"
+                                - generic [ref=e606]: "85"
+                                - generic [ref=e607]: </
+                                - generic [ref=e608]: reviewScore
+                                - generic [ref=e609]: ">"
+                                - generic [ref=e611]: <
+                                - generic [ref=e612]: rating
+                                - generic [ref=e613]: ">"
+                                - generic [ref=e614]: Universal
+                                - generic [ref=e615]: </
+                                - generic [ref=e616]: rating
+                                - generic [ref=e617]: ">"
+                                - generic [ref=e619]: </
+                                - generic [ref=e620]: item
+                                - generic [ref=e621]: ">"
+                                - generic [ref=e623]: <
+                                - generic [ref=e624]: item
+                                - generic [ref=e626]: category
+                                - generic [ref=e627]: =
+                                - generic [ref=e628]: "\"Driving\""
+                                - generic [ref=e629]: ">"
+                                - generic [ref=e631]: <
+                                - generic [ref=e632]: id
+                                - generic [ref=e633]: ">"
+                                - generic [ref=e634]: "2"
+                                - generic [ref=e635]: </
+                                - generic [ref=e636]: id
+                                - generic [ref=e637]: ">"
+                                - generic [ref=e639]: <
+                                - generic [ref=e640]: name
+                                - generic [ref=e641]: ">"
+                                - generic [ref=e642]: Gran Turismo 3
+                                - generic [ref=e643]: </
+                                - generic [ref=e644]: name
+                                - generic [ref=e645]: ">"
+                                - generic [ref=e647]: <
+                                - generic [ref=e648]: releaseDate
+                                - generic [ref=e649]: ">"
+                                - generic [ref=e650]: 2001-03-10 23:59:59
+                                - generic [ref=e651]: </
+                                - generic [ref=e652]: releaseDate
+                                - generic [ref=e653]: ">"
+                                - generic [ref=e655]: <
+                                - generic [ref=e656]: reviewScore
+                                - generic [ref=e657]: ">"
+                                - generic [ref=e658]: "91"
+                                - generic [ref=e659]: </
+                                - generic [ref=e660]: reviewScore
+                                - generic [ref=e661]: ">"
+                                - generic [ref=e663]: <
+                                - generic [ref=e664]: rating
+                                - generic [ref=e665]: ">"
+                                - generic [ref=e666]: Universal
+                                - generic [ref=e667]: </
+                                - generic [ref=e668]: rating
+                                - generic [ref=e669]: ">"
+                                - generic [ref=e671]: </
+                                - generic [ref=e672]: item
+                                - generic [ref=e673]: ">"
+                                - generic [ref=e675]: <
+                                - generic [ref=e676]: item
+                                - generic [ref=e678]: category
+                                - generic [ref=e679]: =
+                                - generic [ref=e680]: "\"Puzzle\""
+                                - generic [ref=e681]: ">"
+                                - generic [ref=e683]: <
+                                - generic [ref=e684]: id
+                                - generic [ref=e685]: ">"
+                                - generic [ref=e686]: "3"
+                                - generic [ref=e687]: </
+                                - generic [ref=e688]: id
+                                - generic [ref=e689]: ">"
+                                - generic [ref=e691]: <
+                                - generic [ref=e692]: name
+                                - generic [ref=e693]: ">"
+                                - generic [ref=e694]: Tetris
+                                - generic [ref=e695]: </
+                                - generic [ref=e696]: name
+                                - generic [ref=e697]: ">"
+                                - generic [ref=e699]: <
+                                - generic [ref=e700]: releaseDate
+                                - generic [ref=e701]: ">"
+                                - generic [ref=e702]: 1984-06-25 23:59:59
+                                - generic [ref=e703]: </
+                                - generic [ref=e704]: releaseDate
+                                - generic [ref=e705]: ">"
+                                - generic [ref=e707]: <
+                                - generic [ref=e708]: reviewScore
+                                - generic [ref=e709]: ">"
+                                - generic [ref=e710]: "88"
+                                - generic [ref=e711]: </
+                                - generic [ref=e712]: reviewScore
+                                - generic [ref=e713]: ">"
+                                - generic [ref=e715]: <
+                                - generic [ref=e716]: rating
+                                - generic [ref=e717]: ">"
+                                - generic [ref=e718]: Universal
+                                - generic [ref=e719]: </
+                                - generic [ref=e720]: rating
+                                - generic [ref=e721]: ">"
+                                - generic [ref=e723]: </
+                                - generic [ref=e724]: item
+                                - generic [ref=e725]: ">"
+                                - generic [ref=e727]: <
+                                - generic [ref=e728]: item
+                                - generic [ref=e730]: category
+                                - generic [ref=e731]: =
+                                - generic [ref=e732]: "\"Platform\""
+                                - generic [ref=e733]: ">"
+                                - generic [ref=e735]: <
+                                - generic [ref=e736]: id
+                                - generic [ref=e737]: ">"
+                                - generic [ref=e738]: "4"
+                                - generic [ref=e739]: </
+                                - generic [ref=e740]: id
+                                - generic [ref=e741]: ">"
+                                - generic [ref=e743]: <
+                                - generic [ref=e744]: name
+                                - generic [ref=e745]: ">"
+                                - generic [ref=e746]: Super Mario 64
+                                - generic [ref=e747]: </
+                                - generic [ref=e748]: name
+                                - generic [ref=e749]: ">"
+                                - generic [ref=e751]: <
+                                - generic [ref=e752]: releaseDate
+                                - generic [ref=e753]: ">"
+                                - generic [ref=e754]: 1996-10-20 23:59:59
+                                - generic [ref=e755]: </
+                                - generic [ref=e756]: releaseDate
+                                - generic [ref=e757]: ">"
+                                - generic [ref=e759]: <
+                                - generic [ref=e760]: reviewScore
+                                - generic [ref=e761]: ">"
+                                - generic [ref=e762]: "90"
+                                - generic [ref=e763]: </
+                                - generic [ref=e764]: reviewScore
+                                - generic [ref=e765]: ">"
+                                - generic [ref=e767]: <
+                                - generic [ref=e768]: rating
+                                - generic [ref=e769]: ">"
+                                - generic [ref=e770]: Universal
+                                - generic [ref=e771]: </
+                                - generic [ref=e772]: rating
+                                - generic [ref=e773]: ">"
+                                - generic [ref=e775]: </
+                                - generic [ref=e776]: item
+                                - generic [ref=e777]: ">"
+                                - generic [ref=e779]: <
+                                - generic [ref=e780]: item
+                                - generic [ref=e782]: category
+                                - generic [ref=e783]: =
+                                - generic [ref=e784]: "\"Adventure\""
+                                - generic [ref=e785]: ">"
+                                - generic [ref=e787]: <
+                                - generic [ref=e788]: id
+                                - generic [ref=e789]: ">"
+                                - generic [ref=e790]: "5"
+                                - generic [ref=e791]: </
+                                - generic [ref=e792]: id
+                                - generic [ref=e793]: ">"
+                                - generic [ref=e795]: <
+                                - generic [ref=e796]: name
+                                - generic [ref=e797]: ">"
+                                - generic [ref=e798]: "The Legend of Zelda: Ocarina of Time"
+                                - generic [ref=e799]: </
+                                - generic [ref=e800]: name
+                                - generic [ref=e801]: ">"
+                                - generic [ref=e803]: <
+                                - generic [ref=e804]: releaseDate
+                                - generic [ref=e805]: ">"
+                                - generic [ref=e806]: 1998-12-10 23:59:59
+                                - generic [ref=e807]: </
+                                - generic [ref=e808]: releaseDate
+                                - generic [ref=e809]: ">"
+                                - generic [ref=e811]: <
+                                - generic [ref=e812]: reviewScore
+                                - generic [ref=e813]: ">"
+                                - generic [ref=e814]: "93"
+                                - generic [ref=e815]: </
+                                - generic [ref=e816]: reviewScore
+                                - generic [ref=e817]: ">"
+                                - generic [ref=e819]: <
+                                - generic [ref=e820]: rating
+                                - generic [ref=e821]: ">"
+                                - generic [ref=e822]: PG-13
+                                - generic [ref=e823]: </
+                                - generic [ref=e824]: rating
+                                - generic [ref=e825]: ">"
+                                - generic [ref=e827]: </
+                                - generic [ref=e828]: item
+                                - generic [ref=e829]: ">"
+                                - generic [ref=e831]: <
+                                - generic [ref=e832]: item
+                                - generic [ref=e834]: category
+                                - generic [ref=e835]: =
+                                - generic [ref=e836]: "\"Shooter\""
+                                - generic [ref=e837]: ">"
+                                - generic [ref=e839]: <
+                                - generic [ref=e840]: id
+                                - generic [ref=e841]: ">"
+                                - generic [ref=e842]: "6"
+                                - generic [ref=e843]: </
+                                - generic [ref=e844]: id
+                                - generic [ref=e845]: ">"
+                                - generic [ref=e847]: <
+                                - generic [ref=e848]: name
+                                - generic [ref=e849]: ">"
+                                - generic [ref=e850]: Doom
+                                - generic [ref=e851]: </
+                                - generic [ref=e852]: name
+                                - generic [ref=e853]: ">"
+                                - generic [ref=e855]: <
+                                - generic [ref=e856]: releaseDate
+                                - generic [ref=e857]: ">"
+                                - generic [ref=e858]: 1993-02-18 23:59:59
+                                - generic [ref=e859]: </
+                                - generic [ref=e860]: releaseDate
+                                - generic [ref=e861]: ">"
+                                - generic [ref=e863]: <
+                                - generic [ref=e864]: reviewScore
+                                - generic [ref=e865]: ">"
+                                - generic [ref=e866]: "81"
+                                - generic [ref=e867]: </
+                                - generic [ref=e868]: reviewScore
+                                - generic [ref=e869]: ">"
+                                - generic [ref=e871]: <
+                                - generic [ref=e872]: rating
+                                - generic [ref=e873]: ">"
+                                - generic [ref=e874]: Mature
+                                - generic [ref=e875]: </
+                                - generic [ref=e876]: rating
+                                - generic [ref=e877]: ">"
+                                - generic [ref=e879]: </
+                                - generic [ref=e880]: item
+                                - generic [ref=e881]: ">"
+                                - generic [ref=e883]: <
+                                - generic [ref=e884]: item
+                                - generic [ref=e886]: category
+                                - generic [ref=e887]: =
+                                - generic [ref=e888]: "\"Puzzle\""
+                                - generic [ref=e889]: ">"
+                                - generic [ref=e891]: <
+                                - generic [ref=e892]: id
+                                - generic [ref=e893]: ">"
+                                - generic [ref=e894]: "7"
+                                - generic [ref=e895]: </
+                                - generic [ref=e896]: id
+                                - generic [ref=e897]: ">"
+                                - generic [ref=e899]: <
+                                - generic [ref=e900]: name
+                                - generic [ref=e901]: ">"
+                                - generic [ref=e902]: Minecraft
+                                - generic [ref=e903]: </
+                                - generic [ref=e904]: name
+                                - generic [ref=e905]: ">"
+                                - generic [ref=e907]: <
+                                - generic [ref=e908]: releaseDate
+                                - generic [ref=e909]: ">"
+                                - generic [ref=e910]: 2011-12-05 23:59:59
+                                - generic [ref=e911]: </
+                                - generic [ref=e912]: releaseDate
+                                - generic [ref=e913]: ">"
+                                - generic [ref=e915]: <
+                                - generic [ref=e916]: reviewScore
+                                - generic [ref=e917]: ">"
+                                - generic [ref=e918]: "77"
+                                - generic [ref=e919]: </
+                                - generic [ref=e920]: reviewScore
+                                - generic [ref=e921]: ">"
+                                - generic [ref=e923]: <
+                                - generic [ref=e924]: rating
+                                - generic [ref=e925]: ">"
+                                - generic [ref=e926]: Universal
+                                - generic [ref=e927]: </
+                                - generic [ref=e928]: rating
+                                - generic [ref=e929]: ">"
+                                - generic [ref=e931]: </
+                                - generic [ref=e932]: item
+                                - generic [ref=e933]: ">"
+                                - generic [ref=e935]: <
+                                - generic [ref=e936]: item
+                                - generic [ref=e938]: category
+                                - generic [ref=e939]: =
+                                - generic [ref=e940]: "\"Strategy\""
+                                - generic [ref=e941]: ">"
+                                - generic [ref=e943]: <
+                                - generic [ref=e944]: id
+                                - generic [ref=e945]: ">"
+                                - generic [ref=e946]: "8"
+                                - generic [ref=e947]: </
+                                - generic [ref=e948]: id
+                                - generic [ref=e949]: ">"
+                                - generic [ref=e951]: <
+                                - generic [ref=e952]: name
+                                - generic [ref=e953]: ">"
+                                - generic [ref=e954]: SimCity 2000
+                                - generic [ref=e955]: </
+                                - generic [ref=e956]: name
+                                - generic [ref=e957]: ">"
+                                - generic [ref=e959]: <
+                                - generic [ref=e960]: releaseDate
+                                - generic [ref=e961]: ">"
+                                - generic [ref=e962]: 1994-09-11 23:59:59
+                                - generic [ref=e963]: </
+                                - generic [ref=e964]: releaseDate
+                                - generic [ref=e965]: ">"
+                                - generic [ref=e967]: <
+                                - generic [ref=e968]: reviewScore
+                                - generic [ref=e969]: ">"
+                                - generic [ref=e970]: "88"
+                                - generic [ref=e971]: </
+                                - generic [ref=e972]: reviewScore
+                                - generic [ref=e973]: ">"
+                                - generic [ref=e975]: <
+                                - generic [ref=e976]: rating
+                                - generic [ref=e977]: ">"
+                                - generic [ref=e978]: Universal
+                                - generic [ref=e979]: </
+                                - generic [ref=e980]: rating
+                                - generic [ref=e981]: ">"
+                                - generic [ref=e983]: </
+                                - generic [ref=e984]: item
+                                - generic [ref=e985]: ">"
+                                - generic [ref=e987]: <
+                                - generic [ref=e988]: item
+                                - generic [ref=e990]: category
+                                - generic [ref=e991]: =
+                                - generic [ref=e992]: "\"RPG\""
+                                - generic [ref=e993]: ">"
+                                - generic [ref=e995]: <
+                                - generic [ref=e996]: id
+                                - generic [ref=e997]: ">"
+                                - generic [ref=e998]: "9"
+                                - generic [ref=e999]: </
+                                - generic [ref=e1000]: id
+                                - generic [ref=e1001]: ">"
+                                - generic [ref=e1003]: <
+                                - generic [ref=e1004]: name
+                                - generic [ref=e1005]: ">"
+                                - generic [ref=e1006]: Final Fantasy VII
+                                - generic [ref=e1007]: </
+                                - generic [ref=e1008]: name
+                                - generic [ref=e1009]: ">"
+                                - generic [ref=e1011]: <
+                                - generic [ref=e1012]: releaseDate
+                                - generic [ref=e1013]: ">"
+                                - generic [ref=e1014]: 1997-08-20 23:59:59
+                                - generic [ref=e1015]: </
+                                - generic [ref=e1016]: releaseDate
+                                - generic [ref=e1017]: ">"
+                                - generic [ref=e1019]: <
+                                - generic [ref=e1020]: reviewScore
+                                - generic [ref=e1021]: ">"
+                                - generic [ref=e1022]: "97"
+                                - generic [ref=e1023]: </
+                                - generic [ref=e1024]: reviewScore
+                                - generic [ref=e1025]: ">"
+                                - generic [ref=e1027]: <
+                                - generic [ref=e1028]: rating
+                                - generic [ref=e1029]: ">"
+                                - generic [ref=e1030]: PG-13
+                                - generic [ref=e1031]: </
+                                - generic [ref=e1032]: rating
+                                - generic [ref=e1033]: ">"
+                                - generic [ref=e1035]: </
+                                - generic [ref=e1036]: item
+                                - generic [ref=e1037]: ">"
+                                - generic [ref=e1039]: <
+                                - generic [ref=e1040]: item
+                                - generic [ref=e1042]: category
+                                - generic [ref=e1043]: =
+                                - generic [ref=e1044]: "\"Driving\""
+                                - generic [ref=e1045]: ">"
+                                - generic [ref=e1047]: <
+                                - generic [ref=e1048]: id
+                                - generic [ref=e1049]: ">"
+                                - generic [ref=e1050]: "10"
+                                - generic [ref=e1051]: </
+                                - generic [ref=e1052]: id
+                                - generic [ref=e1053]: ">"
+                                - generic [ref=e1055]: <
+                                - generic [ref=e1056]: name
+                                - generic [ref=e1057]: ">"
+                                - generic [ref=e1058]: Grand Theft Auto III
+                                - generic [ref=e1059]: </
+                                - generic [ref=e1060]: name
+                                - generic [ref=e1061]: ">"
+                                - generic [ref=e1063]: <
+                                - generic [ref=e1064]: releaseDate
+                                - generic [ref=e1065]: ">"
+                                - generic [ref=e1066]: 2001-04-23 23:59:59
+                                - generic [ref=e1067]: </
+                                - generic [ref=e1068]: releaseDate
+                                - generic [ref=e1069]: ">"
+                                - generic [ref=e1071]: <
+                                - generic [ref=e1072]: reviewScore
+                                - generic [ref=e1073]: ">"
+                                - generic [ref=e1074]: "90"
+                                - generic [ref=e1075]: </
+                                - generic [ref=e1076]: reviewScore
+                                - generic [ref=e1077]: ">"
+                                - generic [ref=e1079]: <
+                                - generic [ref=e1080]: rating
+                                - generic [ref=e1081]: ">"
+                                - generic [ref=e1082]: Mature
+                                - generic [ref=e1083]: </
+                                - generic [ref=e1084]: rating
+                                - generic [ref=e1085]: ">"
+                                - generic [ref=e1087]: </
+                                - generic [ref=e1088]: item
+                                - generic [ref=e1089]: ">"
+                                - generic [ref=e1090]: </
+                                - generic [ref=e1091]: List
+                                - generic [ref=e1092]: ">"
+                          - generic [ref=e1093]:
+                            - heading "Response headers" [level=5] [ref=e1094]
+                            - generic [ref=e1095]:
+                              - generic [ref=e1096]: "cache-control: no-cache,no-store,max-age=0,must-revalidate"
+                              - generic [ref=e1097]: "content-encoding: zstd"
+                              - generic [ref=e1098]: "content-type: application/xml"
+                              - generic [ref=e1099]: "date: Tue,08 Sep 2026 04:39:19 GMT"
+                              - generic [ref=e1100]: "expires: 0"
+                              - generic [ref=e1101]: "fly-request-id: 01M1ZN0ECJ38097GKGHQD7E9BB-sin"
+                              - generic [ref=e1102]: "pragma: no-cache"
+                              - generic [ref=e1103]: "server: Fly/c06d5eb70e (2026-09-07)"
+                              - generic [ref=e1104]: "vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+                              - generic [ref=e1105]: "via: 2 fly.io,2 fly.io"
+                              - generic [ref=e1106]: "x-content-type-options: nosniff"
+                              - generic [ref=e1107]: "x-frame-options: DENY"
+                              - generic [ref=e1108]: "x-xss-protection: 1; mode=block"
+                - heading "Possible responses" [level=4] [ref=e486]
+                - region [ref=e488]:
+                  - rowgroup [ref=e489]:
+                    - row [ref=e490]:
+                      - cell "Code" [ref=e491]
+                      - cell "Description" [ref=e492]
+                      - cell "Links" [ref=e493]
+                  - rowgroup [ref=e494]:
+                    - row [ref=e495]:
+                      - cell "200" [ref=e496]
+                      - cell "OK Media type application/xml Controls Accept header. Example Value" [ref=e497]:
+                        - paragraph [ref=e500]: OK
+                        - generic [ref=e502]:
+                          - generic [ref=e503]: Media type
+                          - combobox "Media Type" [ref=e505]:
+                            - option "application/xml" [selected]
+                            - option "application/json"
+                          - generic [ref=e506]:
+                            - text: Controls
+                            - code [ref=e507]: Accept
+                            - text: header.
+                        - generic [ref=e508]:
+                          - tablist [ref=e509]:
+                            - tab "Example Value" [selected] [ref=e510] [cursor=pointer]
+                            - tab "Schema" [ref=e511] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e512]:
+                            - code [ref=e516]:
+                              - generic [ref=e517]: <?xml version="1.0" encoding="UTF-8"?>
+                              - generic [ref=e518]: <!-- XML example cannot be generated; root element name is undefined -->
+                      - cell "No links" [ref=e519]
+          - generic [ref=e92]:
+            - generic [ref=e93] [cursor=pointer]:
+              - button "post /api/v2/videogame" [expanded] [ref=e94]:
+                - generic [ref=e95]: POST
+                - link "/api/v2/videogame" [ref=e97]:
+                  - /url: "#/api-video-games-controller-v-2/createUsingPOST"
+                - generic [ref=e99]: Create a video game
+              - button "authorization button unlocked" [ref=e102]
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - generic [ref=e204]:
+                  - heading "Parameters" [level=4] [ref=e207] [cursor=pointer]
+                  - generic [ref=e208]:
+                    - button "Cancel" [ref=e347] [cursor=pointer]
+                    - button "Reset" [ref=e352] [cursor=pointer]
+                - paragraph [ref=e212]: No parameters
+                - generic [ref=e213]:
+                  - generic [ref=e214]:
+                    - heading "Request body" [level=4] [ref=e215]
+                    - combobox "Request content type" [ref=e218]:
+                      - option "application/json" [selected]
+                      - option "application/xml"
+                  - textbox [ref=e350]: "{ \"category\": \"Platform\", \"name\": \"Copilot QA 2026-09-08\", \"rating\": \"Mature\", \"releaseDate\": \"2026-09-08\", \"reviewScore\": 85 }"
+              - generic [ref=e254]:
+                - button "Execute" [ref=e351] [cursor=pointer]
+                - button "Clear" [ref=e353] [cursor=pointer]
+              - generic [ref=e255]:
+                - generic [ref=e355]:
+                  - heading "Request" [level=3] [ref=e357]
+                  - generic [ref=e358]:
+                    - generic [ref=e359]:
+                      - heading "Curl" [level=4] [ref=e360]
+                      - button [ref=e362] [cursor=pointer]
+                      - code [ref=e365]:
+                        - generic [ref=e366]: curl -X
+                        - generic [ref=e367]: "'POST'"
+                        - generic [ref=e368]: \
+                        - generic [ref=e370]: "'https://videogamedb.uk:443/api/v2/videogame'"
+                        - generic [ref=e371]: \
+                        - generic [ref=e372]: "-H"
+                        - generic [ref=e373]: "'accept: application/xml'"
+                        - generic [ref=e374]: \
+                        - generic [ref=e375]: "-H"
+                        - generic [ref=e376]: "'Content-Type: application/json'"
+                        - generic [ref=e377]: \
+                        - generic [ref=e378]: "-d"
+                        - generic [ref=e379]: "'{ \"category\": \"Platform\", \"name\": \"Copilot QA 2026-09-08\", \"rating\": \"Mature\", \"releaseDate\": \"2026-09-08\", \"reviewScore\": 85 }'"
+                    - generic [ref=e380]:
+                      - heading "Request URL" [level=4] [ref=e381]
+                      - generic [ref=e382]: https://videogamedb.uk:443/api/v2/videogame
+                  - heading "Server response" [level=3] [ref=e385]
+                  - table [ref=e387]:
+                    - rowgroup [ref=e388]:
+                      - row [ref=e389]:
+                        - cell "Code" [ref=e390]
+                        - cell "Details" [ref=e391]
+                    - rowgroup [ref=e392]:
+                      - row [ref=e393]:
+                        - cell "200" [ref=e394]
+                        - 'cell "Response body Download <VideoGame category=\"Platform\"> <id>0</id> <name>Copilot QA 2026-09-08</name> <releaseDate>2026-09-08</releaseDate> <reviewScore>85</reviewScore> <rating>Mature</rating> </VideoGame> Response headers access-control-allow-origin: * cache-control: no-cache,no-store,max-age=0,must-revalidate content-encoding: zstd content-type: application/xml date: Tue,08 Sep 2026 04:38:50 GMT expires: 0 fly-request-id: 01M1ZMZJPWXCGRB4K2CK6D5166-sin pragma: no-cache server: Fly/c06d5eb70e (2026-09-07) vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers via: 2 fly.io,2 fly.io x-content-type-options: nosniff x-frame-options: DENY x-xss-protection: 1; mode=block" [ref=e395]':
+                          - generic [ref=e396]:
+                            - heading "Response body" [level=5] [ref=e397]
+                            - generic [ref=e398]:
+                              - generic [ref=e399] [cursor=pointer]: Download
+                              - button [ref=e401] [cursor=pointer]
+                              - code [ref=e403]:
+                                - generic [ref=e404]: <
+                                - generic [ref=e405]: VideoGame
+                                - generic [ref=e407]: category
+                                - generic [ref=e408]: =
+                                - generic [ref=e409]: "\"Platform\""
+                                - generic [ref=e410]: ">"
+                                - generic [ref=e412]: <
+                                - generic [ref=e413]: id
+                                - generic [ref=e414]: ">"
+                                - generic [ref=e415]: "0"
+                                - generic [ref=e416]: </
+                                - generic [ref=e417]: id
+                                - generic [ref=e418]: ">"
+                                - generic [ref=e420]: <
+                                - generic [ref=e421]: name
+                                - generic [ref=e422]: ">"
+                                - generic [ref=e423]: Copilot QA 2026-09-08
+                                - generic [ref=e424]: </
+                                - generic [ref=e425]: name
+                                - generic [ref=e426]: ">"
+                                - generic [ref=e428]: <
+                                - generic [ref=e429]: releaseDate
+                                - generic [ref=e430]: ">"
+                                - generic [ref=e431]: 2026-09-08
+                                - generic [ref=e432]: </
+                                - generic [ref=e433]: releaseDate
+                                - generic [ref=e434]: ">"
+                                - generic [ref=e436]: <
+                                - generic [ref=e437]: reviewScore
+                                - generic [ref=e438]: ">"
+                                - generic [ref=e439]: "85"
+                                - generic [ref=e440]: </
+                                - generic [ref=e441]: reviewScore
+                                - generic [ref=e442]: ">"
+                                - generic [ref=e444]: <
+                                - generic [ref=e445]: rating
+                                - generic [ref=e446]: ">"
+                                - generic [ref=e447]: Mature
+                                - generic [ref=e448]: </
+                                - generic [ref=e449]: rating
+                                - generic [ref=e450]: ">"
+                                - generic [ref=e451]: </
+                                - generic [ref=e452]: VideoGame
+                                - generic [ref=e453]: ">"
+                          - generic [ref=e454]:
+                            - heading "Response headers" [level=5] [ref=e455]
+                            - generic [ref=e456]:
+                              - generic [ref=e457]: "access-control-allow-origin: *"
+                              - generic [ref=e458]: "cache-control: no-cache,no-store,max-age=0,must-revalidate"
+                              - generic [ref=e459]: "content-encoding: zstd"
+                              - generic [ref=e460]: "content-type: application/xml"
+                              - generic [ref=e461]: "date: Tue,08 Sep 2026 04:38:50 GMT"
+                              - generic [ref=e462]: "expires: 0"
+                              - generic [ref=e463]: "fly-request-id: 01M1ZMZJPWXCGRB4K2CK6D5166-sin"
+                              - generic [ref=e464]: "pragma: no-cache"
+                              - generic [ref=e465]: "server: Fly/c06d5eb70e (2026-09-07)"
+                              - generic [ref=e466]: "vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+                              - generic [ref=e467]: "via: 2 fly.io,2 fly.io"
+                              - generic [ref=e468]: "x-content-type-options: nosniff"
+                              - generic [ref=e469]: "x-frame-options: DENY"
+                              - generic [ref=e470]: "x-xss-protection: 1; mode=block"
+                - heading "Possible responses" [level=4] [ref=e257]
+                - region [ref=e259]:
+                  - rowgroup [ref=e260]:
+                    - row [ref=e261]:
+                      - cell "Code" [ref=e262]
+                      - cell "Description" [ref=e263]
+                      - cell "Links" [ref=e264]
+                  - rowgroup [ref=e265]:
+                    - row [ref=e266]:
+                      - cell "200" [ref=e267]
+                      - cell "OK Media type application/xml Controls Accept header. Example Value" [ref=e268]:
+                        - paragraph [ref=e271]: OK
+                        - generic [ref=e273]:
+                          - generic [ref=e274]: Media type
+                          - combobox "Media Type" [ref=e276]:
+                            - option "application/xml" [selected]
+                            - option "application/json"
+                          - generic [ref=e277]:
+                            - text: Controls
+                            - code [ref=e278]: Accept
+                            - text: header.
+                        - generic [ref=e279]:
+                          - tablist [ref=e280]:
+                            - tab "Example Value" [selected] [ref=e281] [cursor=pointer]
+                            - tab "Schema" [ref=e282] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e283]:
+                            - code [ref=e287]:
+                              - generic [ref=e288]: <?xml version="1.0" encoding="UTF-8"?>
+                              - generic [ref=e289]: <
+                              - generic [ref=e290]: VideoGame
+                              - generic [ref=e292]: category
+                              - generic [ref=e293]: =
+                              - generic [ref=e294]: "\"string\""
+                              - generic [ref=e295]: ">"
+                              - generic [ref=e297]: <
+                              - generic [ref=e298]: id
+                              - generic [ref=e299]: ">"
+                              - generic [ref=e300]: "0"
+                              - generic [ref=e301]: </
+                              - generic [ref=e302]: id
+                              - generic [ref=e303]: ">"
+                              - generic [ref=e305]: <
+                              - generic [ref=e306]: name
+                              - generic [ref=e307]: ">"
+                              - generic [ref=e308]: string
+                              - generic [ref=e309]: </
+                              - generic [ref=e310]: name
+                              - generic [ref=e311]: ">"
+                              - generic [ref=e313]: <
+                              - generic [ref=e314]: rating
+                              - generic [ref=e315]: ">"
+                              - generic [ref=e316]: string
+                              - generic [ref=e317]: </
+                              - generic [ref=e318]: rating
+                              - generic [ref=e319]: ">"
+                              - generic [ref=e321]: <
+                              - generic [ref=e322]: releaseDate
+                              - generic [ref=e323]: ">"
+                              - generic [ref=e324]: string
+                              - generic [ref=e325]: </
+                              - generic [ref=e326]: releaseDate
+                              - generic [ref=e327]: ">"
+                              - generic [ref=e329]: <
+                              - generic [ref=e330]: reviewScore
+                              - generic [ref=e331]: ">"
+                              - generic [ref=e332]: "0"
+                              - generic [ref=e333]: </
+                              - generic [ref=e334]: reviewScore
+                              - generic [ref=e335]: ">"
+                              - generic [ref=e336]: </
+                              - generic [ref=e337]: VideoGame
+                              - generic [ref=e338]: ">"
+                      - cell "No links" [ref=e339]
+                    - row [ref=e340]:
+                      - cell "400" [ref=e341]
+                      - cell [ref=e342]:
+                        - paragraph [ref=e345]: Invalid request content or duplicate of an existing video game
+                      - cell "No links" [ref=e346]
+          - generic [ref=e106]:
+            - 'button "get /api/v2/videogame/{id}" [expanded] [ref=e108] [cursor=pointer]':
+              - generic [ref=e109]: GET
+              - 'link "/api/v2/videogame/{id}" [ref=e111]':
+                - /url: "#/api-video-games-controller-v-2/getVideoGameUsingGET"
+              - generic [ref=e113]: Get a video game
+            - generic [ref=e1110]:
+              - generic [ref=e1111]:
+                - generic [ref=e1112]:
+                  - heading "Parameters" [level=4] [ref=e1115] [cursor=pointer]
+                  - button "Cancel" [ref=e1229] [cursor=pointer]
+                - table [ref=e1120]:
+                  - rowgroup [ref=e1121]:
+                    - row [ref=e1122]:
+                      - columnheader "Name" [ref=e1123]
+                      - columnheader "Description" [ref=e1124]
+                  - rowgroup [ref=e1125]:
+                    - row [ref=e1231]:
+                      - cell "id *required integer($int32) (path)" [ref=e1127]:
+                        - generic [ref=e1128]: id *required
+                        - generic [ref=e1129]:
+                          - text: integer
+                          - generic [ref=e1130]: ($int32)
+                        - generic [ref=e1131]: (path)
+                      - cell [ref=e1232]:
+                        - paragraph [ref=e1134]: VideoGame ID
+                        - textbox "id" [ref=e1135]: "1"
+              - generic [ref=e1136]:
+                - button "Execute" [ref=e1230] [cursor=pointer]
+                - button "Clear" [ref=e1233] [cursor=pointer]
+              - generic [ref=e1137]:
+                - generic [ref=e1235]:
+                  - heading "Request" [level=3] [ref=e1237]
+                  - generic [ref=e1238]:
+                    - generic [ref=e1239]:
+                      - heading "Curl" [level=4] [ref=e1240]
+                      - button [ref=e1242] [cursor=pointer]
+                      - code [ref=e1245]:
+                        - generic [ref=e1246]: curl -X
+                        - generic [ref=e1247]: "'GET'"
+                        - generic [ref=e1248]: \
+                        - generic [ref=e1250]: "'https://videogamedb.uk:443/api/v2/videogame/1'"
+                        - generic [ref=e1251]: \
+                        - generic [ref=e1252]: "-H"
+                        - generic [ref=e1253]: "'accept: application/xml'"
+                    - generic [ref=e1254]:
+                      - heading "Request URL" [level=4] [ref=e1255]
+                      - generic [ref=e1256]: https://videogamedb.uk:443/api/v2/videogame/1
+                  - heading "Server response" [level=3] [ref=e1259]
+                  - table [ref=e1261]:
+                    - rowgroup [ref=e1262]:
+                      - row [ref=e1263]:
+                        - cell "Code" [ref=e1264]
+                        - cell "Details" [ref=e1265]
+                    - rowgroup [ref=e1266]:
+                      - row [ref=e1267]:
+                        - cell "200" [ref=e1268]
+                        - 'cell "Response body Download <VideoGame category=\"Shooter\"> <id>1</id> <name>Resident Evil 4</name> <releaseDate>2005-10-01 23:59:59</releaseDate> <reviewScore>85</reviewScore> <rating>Universal</rating> </VideoGame> Response headers cache-control: no-cache,no-store,max-age=0,must-revalidate content-encoding: zstd content-type: application/xml date: Tue,08 Sep 2026 04:39:57 GMT expires: 0 fly-request-id: 01M1ZN1M4XM34F5GFGGGF0NE59-sin pragma: no-cache server: Fly/c06d5eb70e (2026-09-07) vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers via: 2 fly.io,2 fly.io x-content-type-options: nosniff x-frame-options: DENY x-xss-protection: 1; mode=block" [ref=e1269]':
+                          - generic [ref=e1270]:
+                            - heading "Response body" [level=5] [ref=e1271]
+                            - generic [ref=e1272]:
+                              - generic [ref=e1273] [cursor=pointer]: Download
+                              - button [ref=e1275] [cursor=pointer]
+                              - code [ref=e1277]:
+                                - generic [ref=e1278]: <
+                                - generic [ref=e1279]: VideoGame
+                                - generic [ref=e1281]: category
+                                - generic [ref=e1282]: =
+                                - generic [ref=e1283]: "\"Shooter\""
+                                - generic [ref=e1284]: ">"
+                                - generic [ref=e1286]: <
+                                - generic [ref=e1287]: id
+                                - generic [ref=e1288]: ">"
+                                - generic [ref=e1289]: "1"
+                                - generic [ref=e1290]: </
+                                - generic [ref=e1291]: id
+                                - generic [ref=e1292]: ">"
+                                - generic [ref=e1294]: <
+                                - generic [ref=e1295]: name
+                                - generic [ref=e1296]: ">"
+                                - generic [ref=e1297]: Resident Evil 4
+                                - generic [ref=e1298]: </
+                                - generic [ref=e1299]: name
+                                - generic [ref=e1300]: ">"
+                                - generic [ref=e1302]: <
+                                - generic [ref=e1303]: releaseDate
+                                - generic [ref=e1304]: ">"
+                                - generic [ref=e1305]: 2005-10-01 23:59:59
+                                - generic [ref=e1306]: </
+                                - generic [ref=e1307]: releaseDate
+                                - generic [ref=e1308]: ">"
+                                - generic [ref=e1310]: <
+                                - generic [ref=e1311]: reviewScore
+                                - generic [ref=e1312]: ">"
+                                - generic [ref=e1313]: "85"
+                                - generic [ref=e1314]: </
+                                - generic [ref=e1315]: reviewScore
+                                - generic [ref=e1316]: ">"
+                                - generic [ref=e1318]: <
+                                - generic [ref=e1319]: rating
+                                - generic [ref=e1320]: ">"
+                                - generic [ref=e1321]: Universal
+                                - generic [ref=e1322]: </
+                                - generic [ref=e1323]: rating
+                                - generic [ref=e1324]: ">"
+                                - generic [ref=e1325]: </
+                                - generic [ref=e1326]: VideoGame
+                                - generic [ref=e1327]: ">"
+                          - generic [ref=e1328]:
+                            - heading "Response headers" [level=5] [ref=e1329]
+                            - generic [ref=e1330]:
+                              - generic [ref=e1331]: "cache-control: no-cache,no-store,max-age=0,must-revalidate"
+                              - generic [ref=e1332]: "content-encoding: zstd"
+                              - generic [ref=e1333]: "content-type: application/xml"
+                              - generic [ref=e1334]: "date: Tue,08 Sep 2026 04:39:57 GMT"
+                              - generic [ref=e1335]: "expires: 0"
+                              - generic [ref=e1336]: "fly-request-id: 01M1ZN1M4XM34F5GFGGGF0NE59-sin"
+                              - generic [ref=e1337]: "pragma: no-cache"
+                              - generic [ref=e1338]: "server: Fly/c06d5eb70e (2026-09-07)"
+                              - generic [ref=e1339]: "vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+                              - generic [ref=e1340]: "via: 2 fly.io,2 fly.io"
+                              - generic [ref=e1341]: "x-content-type-options: nosniff"
+                              - generic [ref=e1342]: "x-frame-options: DENY"
+                              - generic [ref=e1343]: "x-xss-protection: 1; mode=block"
+                - heading "Possible responses" [level=4] [ref=e1139]
+                - region [ref=e1141]:
+                  - rowgroup [ref=e1142]:
+                    - row [ref=e1143]:
+                      - cell "Code" [ref=e1144]
+                      - cell "Description" [ref=e1145]
+                      - cell "Links" [ref=e1146]
+                  - rowgroup [ref=e1147]:
+                    - row [ref=e1148]:
+                      - cell "200" [ref=e1149]
+                      - cell "OK Media type application/xml Controls Accept header. Example Value" [ref=e1150]:
+                        - paragraph [ref=e1153]: OK
+                        - generic [ref=e1155]:
+                          - generic [ref=e1156]: Media type
+                          - combobox "Media Type" [ref=e1158]:
+                            - option "application/xml" [selected]
+                            - option "application/json"
+                          - generic [ref=e1159]:
+                            - text: Controls
+                            - code [ref=e1160]: Accept
+                            - text: header.
+                        - generic [ref=e1161]:
+                          - tablist [ref=e1162]:
+                            - tab "Example Value" [selected] [ref=e1163] [cursor=pointer]
+                            - tab "Schema" [ref=e1164] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e1165]:
+                            - code [ref=e1169]:
+                              - generic [ref=e1170]: <?xml version="1.0" encoding="UTF-8"?>
+                              - generic [ref=e1171]: <
+                              - generic [ref=e1172]: VideoGame
+                              - generic [ref=e1174]: category
+                              - generic [ref=e1175]: =
+                              - generic [ref=e1176]: "\"string\""
+                              - generic [ref=e1177]: ">"
+                              - generic [ref=e1179]: <
+                              - generic [ref=e1180]: id
+                              - generic [ref=e1181]: ">"
+                              - generic [ref=e1182]: "0"
+                              - generic [ref=e1183]: </
+                              - generic [ref=e1184]: id
+                              - generic [ref=e1185]: ">"
+                              - generic [ref=e1187]: <
+                              - generic [ref=e1188]: name
+                              - generic [ref=e1189]: ">"
+                              - generic [ref=e1190]: string
+                              - generic [ref=e1191]: </
+                              - generic [ref=e1192]: name
+                              - generic [ref=e1193]: ">"
+                              - generic [ref=e1195]: <
+                              - generic [ref=e1196]: rating
+                              - generic [ref=e1197]: ">"
+                              - generic [ref=e1198]: string
+                              - generic [ref=e1199]: </
+                              - generic [ref=e1200]: rating
+                              - generic [ref=e1201]: ">"
+                              - generic [ref=e1203]: <
+                              - generic [ref=e1204]: releaseDate
+                              - generic [ref=e1205]: ">"
+                              - generic [ref=e1206]: string
+                              - generic [ref=e1207]: </
+                              - generic [ref=e1208]: releaseDate
+                              - generic [ref=e1209]: ">"
+                              - generic [ref=e1211]: <
+                              - generic [ref=e1212]: reviewScore
+                              - generic [ref=e1213]: ">"
+                              - generic [ref=e1214]: "0"
+                              - generic [ref=e1215]: </
+                              - generic [ref=e1216]: reviewScore
+                              - generic [ref=e1217]: ">"
+                              - generic [ref=e1218]: </
+                              - generic [ref=e1219]: VideoGame
+                              - generic [ref=e1220]: ">"
+                      - cell "No links" [ref=e1221]
+                    - row [ref=e1222]:
+                      - cell "404" [ref=e1223]
+                      - cell [ref=e1224]:
+                        - paragraph [ref=e1227]: Video game not found
+                      - cell "No links" [ref=e1228]
+          - generic [ref=e117]:
+            - generic [ref=e118] [cursor=pointer]:
+              - 'button "put /api/v2/videogame/{id}" [expanded] [ref=e119]':
+                - generic [ref=e120]: PUT
+                - 'link "/api/v2/videogame/{id}" [ref=e122]':
+                  - /url: "#/api-video-games-controller-v-2/updateUsingPUT"
+                - generic [ref=e124]: Update a video game
+              - button "authorization button unlocked" [ref=e127]
+            - generic [ref=e1345]:
+              - generic [ref=e1346]:
+                - generic [ref=e1347]:
+                  - heading "Parameters" [level=4] [ref=e1350] [cursor=pointer]
+                  - generic [ref=e1351]:
+                    - button "Cancel" [ref=e1512] [cursor=pointer]
+                    - button "Reset" [ref=e1517] [cursor=pointer]
+                - table [ref=e1355]:
+                  - rowgroup [ref=e1356]:
+                    - row [ref=e1357]:
+                      - columnheader "Name" [ref=e1358]
+                      - columnheader "Description" [ref=e1359]
+                  - rowgroup [ref=e1360]:
+                    - row [ref=e1518]:
+                      - cell "id *required integer($int32) (path)" [ref=e1362]:
+                        - generic [ref=e1363]: id *required
+                        - generic [ref=e1364]:
+                          - text: integer
+                          - generic [ref=e1365]: ($int32)
+                        - generic [ref=e1366]: (path)
+                      - cell [ref=e1519]:
+                        - paragraph [ref=e1369]: VideoGame ID
+                        - textbox "id" [ref=e1370]: "1"
+                - generic [ref=e1371]:
+                  - generic [ref=e1372]:
+                    - heading "Request body" [level=4] [ref=e1373]
+                    - combobox "Request content type" [ref=e1376]:
+                      - option "application/json" [selected]
+                      - option "application/xml"
+                  - textbox [ref=e1515]: "{ \"category\": \"Shooter\", \"name\": \"Resident Evil 4 Updated\", \"rating\": \"Universal\", \"releaseDate\": \"2005-10-01\", \"reviewScore\": 86 }"
+              - generic [ref=e1412]:
+                - button "Execute" [ref=e1516] [cursor=pointer]
+                - button "Clear" [ref=e1520] [cursor=pointer]
+              - generic [ref=e1413]:
+                - generic [ref=e1522]:
+                  - heading "Request" [level=3] [ref=e1524]
+                  - generic [ref=e1525]:
+                    - generic [ref=e1526]:
+                      - heading "Curl" [level=4] [ref=e1527]
+                      - button [ref=e1529] [cursor=pointer]
+                      - code [ref=e1532]:
+                        - generic [ref=e1533]: curl -X
+                        - generic [ref=e1534]: "'PUT'"
+                        - generic [ref=e1535]: \
+                        - generic [ref=e1537]: "'https://videogamedb.uk:443/api/v2/videogame/1'"
+                        - generic [ref=e1538]: \
+                        - generic [ref=e1539]: "-H"
+                        - generic [ref=e1540]: "'accept: application/xml'"
+                        - generic [ref=e1541]: \
+                        - generic [ref=e1542]: "-H"
+                        - generic [ref=e1543]: "'Content-Type: application/json'"
+                        - generic [ref=e1544]: \
+                        - generic [ref=e1545]: "-d"
+                        - generic [ref=e1546]: "'{ \"category\": \"Shooter\", \"name\": \"Resident Evil 4 Updated\", \"rating\": \"Universal\", \"releaseDate\": \"2005-10-01\", \"reviewScore\": 86 }'"
+                    - generic [ref=e1547]:
+                      - heading "Request URL" [level=4] [ref=e1548]
+                      - generic [ref=e1549]: https://videogamedb.uk:443/api/v2/videogame/1
+                  - heading "Server response" [level=3] [ref=e1552]
+                  - table [ref=e1554]:
+                    - rowgroup [ref=e1555]:
+                      - row [ref=e1556]:
+                        - cell "Code" [ref=e1557]
+                        - cell "Details" [ref=e1558]
+                    - rowgroup [ref=e1559]:
+                      - row [ref=e1560]:
+                        - cell "403 Undocumented" [ref=e1561]:
+                          - text: "403"
+                          - generic [ref=e1562]: Undocumented
+                        - 'cell "Error: response status is 403 Response headers cache-control: no-cache,no-store,max-age=0,must-revalidate date: Tue,08 Sep 2026 04:40:53 GMT expires: 0 fly-request-id: 01M1ZN3A9FS248PNE3D9Z88SGM-sin pragma: no-cache server: Fly/c06d5eb70e (2026-09-07) vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers via: 2 fly.io,2 fly.io x-content-type-options: nosniff x-frame-options: DENY x-xss-protection: 1; mode=block" [ref=e1563]':
+                          - paragraph [ref=e1565]: "Error: response status is 403"
+                          - generic [ref=e1566]:
+                            - heading "Response headers" [level=5] [ref=e1567]
+                            - generic [ref=e1568]:
+                              - generic [ref=e1569]: "cache-control: no-cache,no-store,max-age=0,must-revalidate"
+                              - generic [ref=e1570]: "date: Tue,08 Sep 2026 04:40:53 GMT"
+                              - generic [ref=e1571]: "expires: 0"
+                              - generic [ref=e1572]: "fly-request-id: 01M1ZN3A9FS248PNE3D9Z88SGM-sin"
+                              - generic [ref=e1573]: "pragma: no-cache"
+                              - generic [ref=e1574]: "server: Fly/c06d5eb70e (2026-09-07)"
+                              - generic [ref=e1575]: "vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+                              - generic [ref=e1576]: "via: 2 fly.io,2 fly.io"
+                              - generic [ref=e1577]: "x-content-type-options: nosniff"
+                              - generic [ref=e1578]: "x-frame-options: DENY"
+                              - generic [ref=e1579]: "x-xss-protection: 1; mode=block"
+                - heading "Possible responses" [level=4] [ref=e1415]
+                - region [ref=e1417]:
+                  - rowgroup [ref=e1418]:
+                    - row [ref=e1419]:
+                      - cell "Code" [ref=e1420]
+                      - cell "Description" [ref=e1421]
+                      - cell "Links" [ref=e1422]
+                  - rowgroup [ref=e1423]:
+                    - row [ref=e1424]:
+                      - cell "200" [ref=e1425]
+                      - cell "OK Media type application/xml Controls Accept header. Example Value" [ref=e1426]:
+                        - paragraph [ref=e1429]: OK
+                        - generic [ref=e1431]:
+                          - generic [ref=e1432]: Media type
+                          - combobox "Media Type" [ref=e1434]:
+                            - option "application/xml" [selected]
+                            - option "application/json"
+                          - generic [ref=e1435]:
+                            - text: Controls
+                            - code [ref=e1436]: Accept
+                            - text: header.
+                        - generic [ref=e1437]:
+                          - tablist [ref=e1438]:
+                            - tab "Example Value" [selected] [ref=e1439] [cursor=pointer]
+                            - tab "Schema" [ref=e1440] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e1441]:
+                            - code [ref=e1445]:
+                              - generic [ref=e1446]: <?xml version="1.0" encoding="UTF-8"?>
+                              - generic [ref=e1447]: <
+                              - generic [ref=e1448]: VideoGame
+                              - generic [ref=e1450]: category
+                              - generic [ref=e1451]: =
+                              - generic [ref=e1452]: "\"string\""
+                              - generic [ref=e1453]: ">"
+                              - generic [ref=e1455]: <
+                              - generic [ref=e1456]: id
+                              - generic [ref=e1457]: ">"
+                              - generic [ref=e1458]: "0"
+                              - generic [ref=e1459]: </
+                              - generic [ref=e1460]: id
+                              - generic [ref=e1461]: ">"
+                              - generic [ref=e1463]: <
+                              - generic [ref=e1464]: name
+                              - generic [ref=e1465]: ">"
+                              - generic [ref=e1466]: string
+                              - generic [ref=e1467]: </
+                              - generic [ref=e1468]: name
+                              - generic [ref=e1469]: ">"
+                              - generic [ref=e1471]: <
+                              - generic [ref=e1472]: rating
+                              - generic [ref=e1473]: ">"
+                              - generic [ref=e1474]: string
+                              - generic [ref=e1475]: </
+                              - generic [ref=e1476]: rating
+                              - generic [ref=e1477]: ">"
+                              - generic [ref=e1479]: <
+                              - generic [ref=e1480]: releaseDate
+                              - generic [ref=e1481]: ">"
+                              - generic [ref=e1482]: string
+                              - generic [ref=e1483]: </
+                              - generic [ref=e1484]: releaseDate
+                              - generic [ref=e1485]: ">"
+                              - generic [ref=e1487]: <
+                              - generic [ref=e1488]: reviewScore
+                              - generic [ref=e1489]: ">"
+                              - generic [ref=e1490]: "0"
+                              - generic [ref=e1491]: </
+                              - generic [ref=e1492]: reviewScore
+                              - generic [ref=e1493]: ">"
+                              - generic [ref=e1494]: </
+                              - generic [ref=e1495]: VideoGame
+                              - generic [ref=e1496]: ">"
+                      - cell "No links" [ref=e1497]
+                    - row [ref=e1498]:
+                      - cell "400" [ref=e1499]
+                      - cell [ref=e1500]:
+                        - paragraph [ref=e1503]: Invalid request content
+                      - cell "No links" [ref=e1504]
+                    - row [ref=e1505]:
+                      - cell "404" [ref=e1506]
+                      - cell [ref=e1507]:
+                        - paragraph [ref=e1510]: Video game not found
+                      - cell "No links" [ref=e1511]
+          - generic [ref=e131]:
+            - generic [ref=e132] [cursor=pointer]:
+              - 'button "delete /api/v2/videogame/{id}" [expanded] [active] [ref=e133]':
+                - generic [ref=e134]: DELETE
+                - 'link "/api/v2/videogame/{id}" [ref=e136]':
+                  - /url: "#/api-video-games-controller-v-2/deleteUsingDELETE"
+                - generic [ref=e138]: Delete a video game
+              - button "authorization button unlocked" [ref=e141]
+            - generic [ref=e1581]:
+              - generic [ref=e1582]:
+                - generic [ref=e1583]:
+                  - heading "Parameters" [level=4] [ref=e1586] [cursor=pointer]
+                  - button "Try it out" [ref=e1588] [cursor=pointer]
+                - table [ref=e1591]:
+                  - rowgroup [ref=e1592]:
+                    - row [ref=e1593]:
+                      - columnheader "Name" [ref=e1594]
+                      - columnheader "Description" [ref=e1595]
+                  - rowgroup [ref=e1596]:
+                    - row [ref=e1597]:
+                      - cell "id *required integer($int32) (path)" [ref=e1598]:
+                        - generic [ref=e1599]: id *required
+                        - generic [ref=e1600]:
+                          - text: integer
+                          - generic [ref=e1601]: ($int32)
+                        - generic [ref=e1602]: (path)
+                      - cell [ref=e1603]:
+                        - paragraph [ref=e1605]: VideoGame ID
+                        - textbox "id" [disabled] [ref=e1606]
+              - generic [ref=e1608]:
+                - heading "Possible responses" [level=4] [ref=e1610]
+                - region [ref=e1612]:
+                  - rowgroup [ref=e1613]:
+                    - row [ref=e1614]:
+                      - cell "Code" [ref=e1615]
+                      - cell "Description" [ref=e1616]
+                      - cell "Links" [ref=e1617]
+                  - rowgroup [ref=e1618]:
+                    - row [ref=e1619]:
+                      - cell "200" [ref=e1620]
+                      - cell "OK Media type text/plain Controls Accept header. Example Value" [ref=e1621]:
+                        - paragraph [ref=e1624]: OK
+                        - generic [ref=e1626]:
+                          - generic [ref=e1627]: Media type
+                          - combobox "Media Type" [ref=e1629]:
+                            - option "text/plain" [selected]
+                          - generic [ref=e1630]:
+                            - text: Controls
+                            - code [ref=e1631]: Accept
+                            - text: header.
+                        - generic [ref=e1632]:
+                          - tablist [ref=e1633]:
+                            - tab "Example Value" [selected] [ref=e1634] [cursor=pointer]
+                            - tab "Schema" [ref=e1635] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e1636]:
+                            - code [ref=e1640]:
+                              - generic [ref=e1641]: string
+                      - cell "No links" [ref=e1642]
+                    - row [ref=e1643]:
+                      - cell "404" [ref=e1644]
+                      - cell [ref=e1645]:
+                        - paragraph [ref=e1648]: Video game not found
+                      - cell "No links" [ref=e1649]
+    - heading [level=4] [ref=e147] [cursor=pointer]:
+      - button "Schemas" [ref=e148]

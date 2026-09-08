@@ -1,0 +1,19 @@
+[
+  {
+    "name": "POST creates a video game in read-only mode",
+    "path": "/api/v2/videogame",
+    "headers": {
+      "Content-Type": "application/json",
+      "Accept": "application/xml"
+    },
+    "body": {
+      "category": "Platform",
+      "name": "Copilot QA 2026-09-08",
+      "rating": "Mature",
+      "releaseDate": "2026-09-08",
+      "reviewScore": 85
+    },
+    "expectedStatus": 200,
+    "expectedBody": "<VideoGame category=\"Platform\"><id>0</id><name>Copilot QA 2026-09-08</name><releaseDate>2026-09-08</releaseDate><reviewScore>85</reviewScore><rating>Mature</rating></VideoGame>"
+  }
+]

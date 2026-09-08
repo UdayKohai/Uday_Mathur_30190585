@@ -1,0 +1,234 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - img "Swagger UI" [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Select a definition
+      - combobox "Select a definition" [ref=e12]:
+        - option "default" [selected]
+  - generic [ref=e14]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Video Game DB 2022 API 1.0.0 OAS3" [level=2] [ref=e20]:
+          - text: Video Game DB 2022 API
+          - generic [ref=e21]:
+            - generic [ref=e22]: 1.0.0
+            - generic [ref=e24]: OAS3
+        - link "https://videogamedb.uk/v3/api-docs" [ref=e26] [cursor=pointer]:
+          - /url: https://videogamedb.uk/v3/api-docs
+      - paragraph [ref=e30]: This is an API for a simple, fictional Video Game Database. The application is running in READ ONLY mode, which means any changes like creating, updating or deleting games does not get persisted.
+      - link "James Willett - Website" [ref=e33] [cursor=pointer]:
+        - /url: https://james-willett.com
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - text: Servers
+        - combobox [ref=e39]:
+          - option "https://videogamedb.uk:443 - Inferred Url" [selected]
+      - button "Authorize" [ref=e41] [cursor=pointer]
+    - generic [ref=e47]:
+      - heading [level=3] [ref=e50] [cursor=pointer]:
+        - link "api-authentication-controller" [ref=e51]:
+          - /url: "#/api-authentication-controller"
+        - paragraph [ref=e54]: Api Authentication Controller
+        - button "Expand operation" [ref=e55]
+      - heading [level=3] [ref=e60] [cursor=pointer]:
+        - link "api-video-games-controller" [ref=e61]:
+          - /url: "#/api-video-games-controller"
+        - paragraph [ref=e64]: Api Video Games Controller
+        - button "Expand operation" [ref=e65]
+      - generic [ref=e69]:
+        - heading [level=3] [ref=e70] [cursor=pointer]:
+          - link "api-video-games-controller-v-2" [ref=e71]:
+            - /url: "#/api-video-games-controller-v-2"
+          - paragraph [ref=e74]: Api Video Games Controller V 2
+          - button "Collapse operation" [expanded] [ref=e75]
+        - generic [ref=e79]:
+          - generic [ref=e81]:
+            - button "get /api/v2/videogame" [expanded] [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: GET
+              - link "/api/v2/videogame" [ref=e86]:
+                - /url: "#/api-video-games-controller-v-2/listVideoGamesUsingGET"
+              - generic [ref=e88]: List all video games
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - heading "Parameters" [level=4] [ref=e158] [cursor=pointer]
+                  - button "Try it out" [ref=e160] [cursor=pointer]
+                - paragraph [ref=e163]: No parameters
+              - generic [ref=e165]:
+                - heading "Possible responses" [level=4] [ref=e167]
+                - region [ref=e169]:
+                  - rowgroup [ref=e170]:
+                    - row [ref=e171]:
+                      - cell "Code" [ref=e172]
+                      - cell "Description" [ref=e173]
+                      - cell "Links" [ref=e174]
+                  - rowgroup [ref=e175]:
+                    - row [ref=e176]:
+                      - cell "200" [ref=e177]
+                      - cell "OK Media type application/xml Controls Accept header. Example Value" [ref=e178]:
+                        - paragraph [ref=e181]: OK
+                        - generic [ref=e183]:
+                          - generic [ref=e184]: Media type
+                          - combobox "Media Type" [ref=e186]:
+                            - option "application/xml" [selected]
+                            - option "application/json"
+                          - generic [ref=e187]:
+                            - text: Controls
+                            - code [ref=e188]: Accept
+                            - text: header.
+                        - generic [ref=e189]:
+                          - tablist [ref=e190]:
+                            - tab "Example Value" [selected] [ref=e191] [cursor=pointer]
+                            - tab "Schema" [ref=e192] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e193]:
+                            - code [ref=e197]:
+                              - generic [ref=e198]: <?xml version="1.0" encoding="UTF-8"?>
+                              - generic [ref=e199]: <!-- XML example cannot be generated; root element name is undefined -->
+                      - cell "No links" [ref=e200]
+          - generic [ref=e92]:
+            - generic [ref=e93] [cursor=pointer]:
+              - button "post /api/v2/videogame" [expanded] [active] [ref=e94]:
+                - generic [ref=e95]: POST
+                - link "/api/v2/videogame" [ref=e97]:
+                  - /url: "#/api-video-games-controller-v-2/createUsingPOST"
+                - generic [ref=e99]: Create a video game
+              - button "authorization button unlocked" [ref=e102]
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - generic [ref=e204]:
+                  - heading "Parameters" [level=4] [ref=e207] [cursor=pointer]
+                  - button "Try it out" [ref=e209] [cursor=pointer]
+                - paragraph [ref=e212]: No parameters
+                - generic [ref=e213]:
+                  - generic [ref=e214]:
+                    - heading "Request body" [level=4] [ref=e215]
+                    - combobox "Request content type" [ref=e218]:
+                      - option "application/json" [selected]
+                      - option "application/xml"
+                  - generic [ref=e221]:
+                    - tablist [ref=e222]:
+                      - tab "Example Value" [selected] [ref=e223] [cursor=pointer]
+                      - tab "Schema" [ref=e224] [cursor=pointer]
+                    - tabpanel "Example Value" [ref=e225]:
+                      - code [ref=e228]:
+                        - generic [ref=e229]: "{"
+                        - generic [ref=e231]: "\"category\""
+                        - generic [ref=e232]: ":"
+                        - generic [ref=e233]: "\"Platform\""
+                        - generic [ref=e234]: ","
+                        - generic [ref=e236]: "\"name\""
+                        - generic [ref=e237]: ":"
+                        - generic [ref=e238]: "\"Mario\""
+                        - generic [ref=e239]: ","
+                        - generic [ref=e241]: "\"rating\""
+                        - generic [ref=e242]: ":"
+                        - generic [ref=e243]: "\"Mature\""
+                        - generic [ref=e244]: ","
+                        - generic [ref=e246]: "\"releaseDate\""
+                        - generic [ref=e247]: ":"
+                        - generic [ref=e248]: "\"2012-05-04\""
+                        - generic [ref=e249]: ","
+                        - generic [ref=e251]: "\"reviewScore\""
+                        - generic [ref=e252]: ":"
+                        - generic [ref=e253]: "85"
+                        - text: "}"
+              - generic [ref=e255]:
+                - heading "Possible responses" [level=4] [ref=e257]
+                - region [ref=e259]:
+                  - rowgroup [ref=e260]:
+                    - row [ref=e261]:
+                      - cell "Code" [ref=e262]
+                      - cell "Description" [ref=e263]
+                      - cell "Links" [ref=e264]
+                  - rowgroup [ref=e265]:
+                    - row [ref=e266]:
+                      - cell "200" [ref=e267]
+                      - cell "OK Media type application/xml Controls Accept header. Example Value" [ref=e268]:
+                        - paragraph [ref=e271]: OK
+                        - generic [ref=e273]:
+                          - generic [ref=e274]: Media type
+                          - combobox "Media Type" [ref=e276]:
+                            - option "application/xml" [selected]
+                            - option "application/json"
+                          - generic [ref=e277]:
+                            - text: Controls
+                            - code [ref=e278]: Accept
+                            - text: header.
+                        - generic [ref=e279]:
+                          - tablist [ref=e280]:
+                            - tab "Example Value" [selected] [ref=e281] [cursor=pointer]
+                            - tab "Schema" [ref=e282] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e283]:
+                            - code [ref=e287]:
+                              - generic [ref=e288]: <?xml version="1.0" encoding="UTF-8"?>
+                              - generic [ref=e289]: <
+                              - generic [ref=e290]: VideoGame
+                              - generic [ref=e292]: category
+                              - generic [ref=e293]: =
+                              - generic [ref=e294]: "\"string\""
+                              - generic [ref=e295]: ">"
+                              - generic [ref=e297]: <
+                              - generic [ref=e298]: id
+                              - generic [ref=e299]: ">"
+                              - generic [ref=e300]: "0"
+                              - generic [ref=e301]: </
+                              - generic [ref=e302]: id
+                              - generic [ref=e303]: ">"
+                              - generic [ref=e305]: <
+                              - generic [ref=e306]: name
+                              - generic [ref=e307]: ">"
+                              - generic [ref=e308]: string
+                              - generic [ref=e309]: </
+                              - generic [ref=e310]: name
+                              - generic [ref=e311]: ">"
+                              - generic [ref=e313]: <
+                              - generic [ref=e314]: rating
+                              - generic [ref=e315]: ">"
+                              - generic [ref=e316]: string
+                              - generic [ref=e317]: </
+                              - generic [ref=e318]: rating
+                              - generic [ref=e319]: ">"
+                              - generic [ref=e321]: <
+                              - generic [ref=e322]: releaseDate
+                              - generic [ref=e323]: ">"
+                              - generic [ref=e324]: string
+                              - generic [ref=e325]: </
+                              - generic [ref=e326]: releaseDate
+                              - generic [ref=e327]: ">"
+                              - generic [ref=e329]: <
+                              - generic [ref=e330]: reviewScore
+                              - generic [ref=e331]: ">"
+                              - generic [ref=e332]: "0"
+                              - generic [ref=e333]: </
+                              - generic [ref=e334]: reviewScore
+                              - generic [ref=e335]: ">"
+                              - generic [ref=e336]: </
+                              - generic [ref=e337]: VideoGame
+                              - generic [ref=e338]: ">"
+                      - cell "No links" [ref=e339]
+                    - row [ref=e340]:
+                      - cell "400" [ref=e341]
+                      - cell [ref=e342]:
+                        - paragraph [ref=e345]: Invalid request content or duplicate of an existing video game
+                      - cell "No links" [ref=e346]
+          - 'button "get /api/v2/videogame/{id}" [ref=e108] [cursor=pointer]':
+            - generic [ref=e109]: GET
+            - 'link "/api/v2/videogame/{id}" [ref=e111]':
+              - /url: "#/api-video-games-controller-v-2/getVideoGameUsingGET"
+            - generic [ref=e113]: Get a video game
+          - generic [ref=e118] [cursor=pointer]:
+            - 'button "put /api/v2/videogame/{id}" [ref=e119]':
+              - generic [ref=e120]: PUT
+              - 'link "/api/v2/videogame/{id}" [ref=e122]':
+                - /url: "#/api-video-games-controller-v-2/updateUsingPUT"
+              - generic [ref=e124]: Update a video game
+            - button "authorization button unlocked" [ref=e127]
+          - generic [ref=e132] [cursor=pointer]:
+            - 'button "delete /api/v2/videogame/{id}" [ref=e133]':
+              - generic [ref=e134]: DELETE
+              - 'link "/api/v2/videogame/{id}" [ref=e136]':
+                - /url: "#/api-video-games-controller-v-2/deleteUsingDELETE"
+              - generic [ref=e138]: Delete a video game
+            - button "authorization button unlocked" [ref=e141]
+    - heading [level=4] [ref=e147] [cursor=pointer]:
+      - button "Schemas" [ref=e148]

@@ -1,0 +1,19 @@
+[
+  {
+    "name": "PUT existing video game is rejected without authorization",
+    "path": "/api/v2/videogame/1",
+    "headers": {
+      "Content-Type": "application/json",
+      "Accept": "application/xml"
+    },
+    "body": {
+      "category": "Shooter",
+      "name": "Resident Evil 4 Updated",
+      "rating": "Universal",
+      "releaseDate": "2005-10-01",
+      "reviewScore": 86
+    },
+    "expectedStatus": 200,
+    "expectedBody": "<VideoGame category=\"Shooter\"><id>1</id><name>Resident Evil 4 Updated</name><releaseDate>2005-10-01</releaseDate><reviewScore>86</reviewScore><rating>Universal</rating></VideoGame>"
+  }
+]
